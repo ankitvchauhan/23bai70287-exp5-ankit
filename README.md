@@ -132,20 +132,6 @@ Features:
 
 ---
 
-## 🌐 Deployment
-
-The project is deployed using **Vercel**.
-
-Example format:
-
-uid-experiment-number-name.vercel.app
-
-Example:
-
-23bai70287-5-name.vercel.app
-
----
-
 ## 🛠️ Installation
 
 Clone the repository:
