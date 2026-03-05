@@ -1,16 +1,177 @@
-# React + Vite
+# React Portfolio – Experiment 5
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an extension of **Experiment 3 and Experiment 4**.
+The application demonstrates routing, state management, context usage, and performance optimization in React.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Technologies Used
 
-## React Compiler
+* React
+* React Router
+* Redux Toolkit
+* Context API
+* useMemo Hook
+* CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Experiment Progression
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Experiment 3
+
+* Implemented **React Router**
+* Created multiple pages:
+
+  * Home
+  * Projects
+  * Contact / Portfolio layout
+* Added navigation bar and routing between pages
+
+### Experiment 4
+
+* Added **Analytics page**
+* Improved UI layout and navigation
+* Implemented reusable components
+
+### Experiment 5 (Current Update)
+
+The following new features were added:
+
+* Implemented **Redux Toolkit**
+
+  * Configured `store.js`
+  * Created `appSlice.js`
+  * Added Redux actions for managing items
+* Added **new page: Reports**
+* Implemented **useMemo** to calculate completed items efficiently
+* Implemented **Context API** for global theme toggle (Dark Mode)
+* Maintained consistent UI design from previous experiments
+
+---
+
+## 📂 Folder Structure
+
+src/
+
+components/
+    Navbar.jsx
+    Footer.jsx
+    ThemeToggle.jsx
+    CardComponent.jsx
+
+context/
+    AppContext.jsx
+
+redux/
+    store.js
+
+redux/slices/
+    appSlice.js
+
+pages/
+    Home.jsx
+    Projects.jsx
+    Analytics.jsx
+    Reports.jsx
+
+App.jsx
+main.jsx
+index.css
+
+---
+
+## 🧠 Redux Features
+
+The Redux slice manages application items.
+
+Actions implemented:
+
+* `addItem`
+* `toggleItem`
+* `deleteItem`
+
+Redux state is used inside the **Reports page** and updated using `useDispatch` and `useSelector`.
+
+---
+
+## ⚡ Performance Optimization
+
+`useMemo` is used in the **Reports page** to calculate the number of completed items without unnecessary recalculation.
+
+Example:
+
+Completed Items Count
+
+---
+
+## 🌙 Context API
+
+Context API is used to manage **global theme state**.
+
+Features:
+
+* Light / Dark mode toggle
+* Available across components through `AppContext`
+
+---
+
+## 📸 Screenshots
+
+### Home Page
+
+![Home](screenshots/home.png)
+
+### Reports Page (New Page)
+
+![Reports](screenshots/new-page.png)
+
+### Redux Feature Demonstration
+
+![Redux Feature](screenshots/redux-feature.png)
+
+---
+
+## 🌐 Deployment
+
+The project is deployed using **Vercel**.
+
+Example format:
+
+uid-experiment-number-name.vercel.app
+
+Example:
+
+23bai70287-5-name.vercel.app
+
+---
+
+## 🛠️ Installation
+
+Clone the repository:
+
+git clone <repository-link>
+
+Install dependencies:
+
+npm install
+
+Run the development server:
+
+npm run dev
+
+---
+
+## 📌 Notes
+
+* `node_modules` is excluded from the repository
+* Screenshots are located in the `/screenshots` folder
+* Project builds successfully with `npm run dev`
+* The project maintains design consistency with previous experiments
+
+## Details
+* student name - Ankit Chauhan
+* Section - AML-7 A
+* submitted on - 5th march 2026
+* github repo - https://github.com/ankitvchauhan/23bai70287-exp5-ankit
+* deploy - 23bai70287-exp5-ankit.vercel.app
